@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        ul, li {
+            list-style: none;
+        }
+
+        li {
+            float: left;
+            padding: 15px;
+            position: relative;
+        }
+
+
+        li:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0;
+            height: 100%;
+            border-bottom: 2px solid #000;
+            transition: .2s all;
+        }
+
+        li:hover:before {
+            width: 100%;
+        }
+
+    </style>
+</head>
+<body>
+<ul id="main">
+    <li>主页</li>
+    <li>关于我们</li>
+    <li>项目分类</li>
+    <li>联系我们</li>
+    <!--<div id="marker"></div>-->
+</ul>
+</body>
+</html>
